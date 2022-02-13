@@ -1,0 +1,22 @@
+student_name=input("enter student name in upper case :")
+student_letters=list(student_name)
+student_number=1
+
+for i in range(0,len(student_letters)):
+    student_letters[i]= ord(student_letters[i])-64
+    student_number=student_number*student_letters[i]
+    i=i+1
+
+teacher_name=input("enter teacher name in upper case :")
+teacher_letters=list(teacher_name)
+teacher_number=1
+
+for i in range(0,len(teacher_letters)):
+    teacher_letters[i]= ord(teacher_letters[i])-64
+    teacher_number=teacher_number*teacher_letters[i]
+    i=i+1
+
+if teacher_number==student_number:
+    print("The teacher and student are choosen")
+else:
+    print("The teacher and student are not choosen")
